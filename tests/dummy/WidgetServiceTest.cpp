@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+#include "gtest/gtest.h"
 #include "dummy/Widget.h"
 #include "dummy/WidgetDao.h"
 #include "dummy/ManagerService.h"

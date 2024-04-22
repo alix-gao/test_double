@@ -1,4 +1,4 @@
-#include <gtest/gtest.h>
+#include "gtest/gtest.h"
 #include "stub/Student.h"
 #include "StubStudent.h"
 #include "stub/StudentManagementSystem.h"
