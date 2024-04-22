@@ -11,13 +11,16 @@
  */
 
 TEST(WidgetServiceTest, should_set_standardized_successfully) {
+    // Given or Arrange
     Widget widget;
     WidgetDao dummyWidgetDao;
     ManagerService manager(true);
     WidgetService widgetService(dummyWidgetDao, manager);
 
+    // When or Act
     widgetService.standardizeWidget(widget);
 
+    // Then or Assert
     bool standardized = widget.isStandardized();
     ASSERT_TRUE(standardized);
 }
