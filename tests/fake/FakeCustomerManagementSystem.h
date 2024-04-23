@@ -12,7 +12,7 @@ private:
     std::map<int, Customer> customerMap;
 
 public:
-    FakeCustomerManagementSystem(std::map<int, Customer> customerMap) : customerMap(customerMap) {}
+    explicit FakeCustomerManagementSystem(const std::map<int, Customer>& customerMap) : customerMap(customerMap) {}
 
 protected:
     std::string getAddress(int customerId) override {
